@@ -2,7 +2,7 @@
 /**
  * main - Entry Level
  *
- * Return: always o
+ * Return: always 0
  */
 
 int main(void)
