@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main -main entry.
- * argc:number of command line arguments
+ * @argc:number of command line arguments
  * @argv: array containing the program command line arguments
  * Description:program that prints its name.
  * Return:integer
