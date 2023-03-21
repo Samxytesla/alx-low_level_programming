@@ -4,3 +4,9 @@
 #define SIZE 1024
 
 #endif
+
+/*
+ * main - defines a macro named SIZE
+ *
+ * Return: always 0
+ */
