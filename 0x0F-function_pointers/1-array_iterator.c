@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * array_iterator - prints each array element on a new
  * @array: array
@@ -11,11 +11,13 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t i = 0;
+	unsigned int i;
 
-	for (i = 0 ; i < size ; i++)
+	if (array && action)
 	{
-		action(array[i]);
+		for (i = 0; i < size; i++)
+		{
+			(*action)(array[i]);
+		}
 	}
 }
-
