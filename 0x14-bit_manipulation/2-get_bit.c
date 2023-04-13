@@ -9,21 +9,21 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int num = 1;
+	unsigned long int number = 1;
 	int bit = 0;
 
 	if (index < 64)
 	{
 		return (-1);
 	}
-	if (n == 0)
+	if (n == '0')
 	{
 		return (bit);
 	}
 
-	num <<= index;
+	number <<= index;
 
-	if (num & n)
+	if (number & n)
 	{
 		bit = 1;
 	}
